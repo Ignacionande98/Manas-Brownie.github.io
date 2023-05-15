@@ -2,22 +2,27 @@
 alert("Bienvenido a Tirana Importados👌, Tienda de ropa importada 👕👖")
 
 function ingresar(){
-    let usuario = prompt("Ingresar nombre de usuario")
+    let usuario = parseFloat(prompt("Ingresar nombre de usuario"))
     let passwd = prompt("Ingresar contraseña")
 
-    if (usuario.trim() === "" || passwd ==="") {
+    if (usuario === "" || passwd ==="") {
         alert("Nombre de usuario o contraseña incorrectos ⛔, por favor intente nuevamente")
     } else {
-        alert("Bienvenido ✅ " + usuario)
+        alert("Bienvenido ✅ " + usuario.trim())
     }
 }
 ingresar()
 
 
-function preciosTienda() {
-    let precios = prompt("Elija un articulo para saber su precio:")
+alert("Tenemos los siguientes articulos disponibles")
+let articulosDisponibles = alert("1-remera 👕, 2-calzado 👟, 3-camisa 👚, 4-abrigo 🧥")
 
-    switch (precios.toLowerCase().trim()) {
+
+
+function preciosTienda() {
+    let precios = prompt("Elija el nombre de articulo para saber su precio:")
+
+    switch (precios.trim()) {
         case "remera":
             alert("Precio final de UY$ 900 para el articulo : " + precios)
             break; 
@@ -31,13 +36,23 @@ function preciosTienda() {
             alert("Precio final de UY$ 3000 para el articulo : " + precios)
             break
         default:
-            alert("No tenemos un producto llamado " + precios)
+            alert("No tenemos disponible un articulo llamado " + precios)
             break;
     }
 
 }
 preciosTienda()
 
-
-
+function articulosDescuentos() {
+    let nroLimite = parseInt(prompt("Ingresa un numero de articulo para ver si tiene descuentos:"))
+     for (let i = 0; i <= 4; i++) {
+        if(nroLimite === 1 || nroLimite === 2 || nroLimite === 3 || nroLimite === 4){
+            alert("El articulo elegido tiene descuentos ✅")
+            break
+        }else {
+            alert("No tenemos stock al momento")
+        } break
+ }
+}
+ articulosDescuentos() 
 
