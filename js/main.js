@@ -7,6 +7,7 @@ function ingresar(){
 
     if (usuario === "" || passwd ==="") {
         alert("Nombre de usuario o contraseña incorrectos ⛔, por favor intente nuevamente")
+        
     } else {
         alert("Bienvenido ✅ " + usuario)
     }
@@ -14,7 +15,7 @@ function ingresar(){
 ingresar()
 
 
-alert("Tenemos los siguientes articulos disponibles")
+alert("Tenemos los siguientes articulos disponibles :")
 let articulosDisponibles = alert("1-remera 👕, 2-calzado 👟, 3-camisa 👚, 4-abrigo 🧥")
 
 
@@ -22,7 +23,7 @@ let articulosDisponibles = alert("1-remera 👕, 2-calzado 👟, 3-camisa 👚, 
 function preciosTienda() {
     let precios = prompt("Elija el nombre de articulo para saber su precio:")
 
-    switch (precios) {
+    switch (precios.toLowerCase().trim()) {
         case "remera":
             alert("Precio final de UY$ 900 para el articulo : " + precios)
             break; 
@@ -50,7 +51,7 @@ function articulosDescuentos() {
             alert("El articulo elegido tiene descuentos ✅")
             break
         }else {
-            alert("No tenemos stock al momento")
+            alert("No tenemos stock de ese articulo al momento")
         } break
  }
 }
