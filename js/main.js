@@ -8,7 +8,7 @@ function ingresar(){
     if (usuario === "" || passwd ==="") {
         alert("Nombre de usuario o contraseña incorrectos ⛔, por favor intente nuevamente")
     } else {
-        alert("Bienvenido ✅ " + usuario.trim())
+        alert("Bienvenido ✅ " + usuario)
     }
 }
 ingresar()
@@ -22,7 +22,7 @@ let articulosDisponibles = alert("1-remera 👕, 2-calzado 👟, 3-camisa 👚, 
 function preciosTienda() {
     let precios = prompt("Elija el nombre de articulo para saber su precio:")
 
-    switch (precios.trim()) {
+    switch (precios) {
         case "remera":
             alert("Precio final de UY$ 900 para el articulo : " + precios)
             break; 
