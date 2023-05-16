@@ -2,7 +2,7 @@
 alert("Bienvenido a Tirana Importados👌, Tienda de ropa importada 👕👖")
 
 function ingresar(){
-    let usuario = parseFloat(prompt("Ingresar nombre de usuario"))
+    let usuario = prompt("Ingresar nombre de usuario")
     let passwd = prompt("Ingresar contraseña")
 
     if (usuario === "" || passwd ==="") {
