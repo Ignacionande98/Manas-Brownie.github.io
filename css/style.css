@@ -1,23 +1,57 @@
-body {
-    background-color: black;
-}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  body {
+    background-color: #0000ff6c;
+  }
 
 h1 { 
-    color: blueviolet;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     font-size: 80px;
+    margin-top: 40px;
+}
+
+.titulos {
+    background-color: #0000ffa6;
 }
 
 h2 { 
-    color: blueviolet;
+    color: black;
     text-align: center;
     font-size: 60px;
+    margin-top:40px ;
 }
 
 
 .section .ropa {
-    color: blueviolet;
-    
+    color: black;
     font-size: 50px;
+    background-color: #0000ff50;
+}
+
+
+.prendas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 40px;
+    background-color: #0000ff50;
+}
+
+h6 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
 }

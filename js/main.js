@@ -14,11 +14,8 @@ function ingresar(){
 }
 ingresar()
 
-
 alert("Tenemos los siguientes articulos disponibles :")
-let articulosDisponibles = alert("1-remera 👕, 2-calzado 👟, 3-camisa 👚, 4-abrigo 🧥")
-
-
+let articulosDisponibles = alert("1-remera, 2-pantalon, 3-calzado, 4-campera, 5-musculosa, 6-short")
 
 function preciosTienda() {
     let precios = prompt("Elija el nombre de articulo para saber su precio:")
@@ -26,19 +23,25 @@ function preciosTienda() {
     switch (precios.toLowerCase().trim()) {
         case "remera":
             alert("Precio final de UY$ 900 para el articulo : " + precios)
-            break; 
-        case "calzado":
-            alert("Precio final de UY$ 2500 para el articulo : " + precios)
-            break;
-        case "camisa":
+            break
+        case "pantalon":
             alert("Precio final de UY$ 1200 para el articulo : " + precios)
-            break;
-        case "abrigo":
+            break
+        case "calzado":
             alert("Precio final de UY$ 3000 para el articulo : " + precios)
+            break
+        case "campera":
+            alert("Precio final de UY$ 4500 para el articulo : " + precios)
+            break
+         case "musculosa":
+            alert("Precio final de UY$ 600 para el articulo : " + precios)
+            break
+         case "short":
+            alert("Precio final de UY$ 900 para el articulo : " + precios)
             break
         default:
             alert("No tenemos disponible un articulo llamado " + precios)
-            break;
+            break
     }
 
 }
@@ -47,7 +50,7 @@ preciosTienda()
 function articulosDescuentos() {
     let nroLimite = parseInt(prompt("Ingresa un numero de articulo para ver si tiene descuentos:"))
      for (let i = 0; i <= 4; i++) {
-        if(nroLimite === 1 || nroLimite === 2 || nroLimite === 3 || nroLimite === 4){
+        if(nroLimite === 1 || nroLimite === 2 || nroLimite === 3 || nroLimite === 4 || nroLimite === 5 || nroLimite ===6){
             alert("El articulo elegido tiene descuentos ✅")
             break
         }else {
@@ -56,4 +59,24 @@ function articulosDescuentos() {
  }
 }
  articulosDescuentos() 
+
+
+
+
+const prendas = [{codigo: 1, catalogo: "Remera", precio: 699,} , 
+                 {codigo: 2, catalogo:"Pantalon", precio: 1200,}, 
+                 {codigo: 3, catalogo:"Calzado", precio: 3000,} , 
+                 {codigo: 4, catalogo:"Campera", precio: 4500,} , 
+                 {codigo: 5, catalogo:"Musculosa", precio: 600,} , 
+                 {codigo: 6, catalogo:"Short", precio: 900,}]
+                 
+
+                 
+
+
+
+                 
+
+
+
 
