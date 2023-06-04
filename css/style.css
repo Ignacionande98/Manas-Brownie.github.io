@@ -8,7 +8,7 @@
   }
 
   body {
-    background-color: #0000ff6c;
+    background-color: beige;
   }
 
 h1 { 
@@ -20,7 +20,7 @@ h1 {
 }
 
 .titulos {
-    background-color: #0000ffa6;
+    background-color: #b83818a6;
 }
 
 h2 { 
@@ -43,7 +43,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 40px;
-    background-color: #0000ff50;
+    background-color: #b83818a6;
 }
 
 h6 {
