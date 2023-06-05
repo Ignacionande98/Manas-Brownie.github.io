@@ -1,3 +1,7 @@
+alert("Bienvenido/a a Manas Brownie - Tienda de brownies artesanales")
+
+alert("Tenemos los siguientes sabores disponibles: Brownie clasico , Brownie nutella , Carrot cake , Rogel , Lemon pie , Tarta frutal")
+
 const carrito = []
 
 const gustos = [{codigo: 1, sabor: "Brownie clasico", precio: 699,} , 
@@ -19,12 +23,12 @@ function compraFinalizada() {
 }
 
 function comprar() {
-    let codigo = prompt("Ingresa el codigo de tu sabor preferido (1-2-3-4-5-6)")
+    let codigo = prompt("Ingresa el codigo del/los sabores que desea comprar 😊🍫 (1-2-3-4-5-6)")
     let saborSeleccionado = buscarSabores(codigo)
     if (saborSeleccionado !== undefined) {
         carrito.push(saborSeleccionado)
         alert("El sabor ha sido añadido a su carrito ✅")
-        let otroSabor = confirm("¿Desea seguir comprando?")
+        let otroSabor = confirm("¿Quiere seguir comprando?")
         if(otroSabor === true) {
             comprar()
         } else {
