@@ -24,6 +24,9 @@ function compraFinalizada() {
 
 function comprar() {
     let codigo = prompt("Ingresa el codigo del/los sabores que desea comprar 😊🍫 (1-2-3-4-5-6)")
+    if (codigo >= 7) {
+        alert("No tenemos stock en este momento , Compra finalizada ⛔")
+    }
     let saborSeleccionado = buscarSabores(codigo)
     if (saborSeleccionado !== undefined) {
         carrito.push(saborSeleccionado)
@@ -38,6 +41,8 @@ function comprar() {
 }
 
 comprar()
+
+
     
 
 
