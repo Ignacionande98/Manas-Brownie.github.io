@@ -18,7 +18,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-image: url(/images/dulce-05.jpg);
+    background-image: url(/images/brownies-portada.jpg);
     background-position: 0;
     background-size: cover;
     background-repeat: no-repeat;
