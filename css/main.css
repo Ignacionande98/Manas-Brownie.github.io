@@ -8,11 +8,13 @@
 }
 
 .navbar {
-    background-color: #ddc5a6;
+    background-color: black;
 }
 
 .nav-link {
-    color: black!important;
+    color: white !important;
+    font-weight: 900;
+    letter-spacing: 1,5px;
 }
 
 .wrapper {
@@ -72,7 +74,7 @@ aside {
 
 
 main {
-    background-image: url(../images/logo-manas.jpg);
+    background-image: url(../images/brownies-infor.jpg);
     background-position: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,7 +85,7 @@ main {
 }
 
 .titulo-principal {
-   color: black;
+   color: white;
     margin-bottom: 30px;
     text-align: center;
     font-weight: 900;
@@ -278,11 +280,11 @@ footer {
 .informacion-titulo {
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url(../images/portada.jpg);
+    background-image: url(../images/brownies-portada.jpg);
     background-position: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background:linear-gradient(black);
+   
     height: 500px;
 }
 
@@ -308,7 +310,7 @@ footer {
     text-align: center;
     font-size: 40px;
     font-weight: 900;
-    color: black;
+    color: white;
     letter-spacing: 10px;
     text-transform: uppercase;
 }
