@@ -278,7 +278,7 @@ footer {
 .informacion-titulo {
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url(/images/portada.jpg);
+    background-image: url(../images/portada.jpg);
     background-position: 0;
     background-size: cover;
     background-repeat: no-repeat;
