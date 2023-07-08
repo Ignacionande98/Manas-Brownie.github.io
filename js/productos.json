@@ -1,0 +1,132 @@
+[
+    {
+        "id": "dulce-01",
+        "titulo": "Torta Coco",
+        "imagen": "./images/dulce-01.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 250
+    },
+    {
+        "id": "dulce-02",
+        "titulo": "Huevo Oreo",
+        "imagen": "./images/dulce-02.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 150
+    },
+    {
+        "id": "dulce-03",
+        "titulo": "Alfajor",
+        "imagen": "./images/dulce-03.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 300
+    },
+    {
+        "id": "dulce-04",
+        "titulo": "Ricardito",
+        "imagen": "./images/dulce-04.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 300
+    },
+    {
+        "id": "dulce-05",
+        "titulo": "Postre",
+        "imagen": "./images/dulce-05.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 400
+    },
+    {
+        "id": "dulce-06",
+        "titulo": "Carrot Cake",
+        "imagen": "./images/dulce-06.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 400
+    },
+    {
+        "id": "dulce-07",
+        "titulo": "Halloween",
+        "imagen": "./images/dulce-07.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 400
+    },
+    {
+        "id": "dulce-08",
+        "titulo": "Brownies",
+        "imagen": "./images/dulce-08.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 400
+    },
+    {
+        "id": "dulce-09",
+        "titulo": "Pan Dulce",
+        "imagen": "./images/dulce-09.jpg",
+        "categoria": {
+            "nombre": "Dulce",
+            "id": "dulces"
+        },
+        "precio": 400
+    },
+    {
+        "id": "salado-01",
+        "titulo": "Factura",
+        "imagen": "./images/salado-01.jpg",
+        "categoria": {
+            "nombre": "Salado",
+            "id": "salados"
+        },
+        "precio": 300
+    },
+    {
+        "id": "salado-02",
+        "titulo": "Sandwiche",
+        "imagen": "./images/salado-02.jpg",
+        "categoria": {
+            "nombre": "Salado",
+            "id": "salados"
+        },
+        "precio": 250
+    },
+    {
+        "id": "salado-03",
+        "titulo": "Scone relleno",
+        "imagen": "./images/salado-03.jpg",
+        "categoria": {
+            "nombre": "Salado",
+            "id": "salados"
+        },
+        "precio": 300
+    },
+    {
+        "id": "salado-04",
+        "titulo": "Pan Sesamo",
+        "imagen": "./images/salado-04.jpg",
+        "categoria": {
+            "nombre": "Salado",
+            "id": "salados"
+        },
+        "precio": 300
+    }
+]
