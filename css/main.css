@@ -11,6 +11,11 @@
     background-color: black;
 }
 
+.producto {
+    box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 14px;
+}
+
 .nav-link {
     color: white !important;
     font-weight: 900;
@@ -166,12 +171,15 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-color: #deb887;
-    color: #000000;
-    padding: 10px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    color:white;
+    padding: 20px;
     padding-right: 15px;
     border-radius: 15px;
+    box-shadow: 5px 10px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .carrito-producto-imagen {
     width: 100px;
@@ -185,10 +193,16 @@ main {
 .carrito-producto-eliminar {
     border: 0;
     background-color: black;
-    color: #deb887;
+    color: white;
     cursor: pointer;
     border-radius: 20px;
     width: 30%;
+    font-weight: 900;
+}
+
+.carrito-producto-eliminar:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .carrito-acciones {
@@ -204,6 +218,12 @@ main {
     border-radius: 20px;
     cursor: pointer;
     font-size: 15px;
+    font-weight: 900;
+}
+
+.carrito-acciones-vaciar:hover {
+    background-color: #deb887;
+    color: #000000;
 }
 
 .carrito-acciones-derecha {
@@ -259,6 +279,9 @@ footer {
 .parrafo-antojo {
     color: #deb887;
     text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    
 }
 
 .parrafo-copy {
@@ -270,7 +293,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    color: #deb887;
+    color: white;
 }
 
 .parrafo-infor {
@@ -314,3 +337,4 @@ footer {
     letter-spacing: 10px;
     text-transform: uppercase;
 }
+

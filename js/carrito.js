@@ -1,5 +1,5 @@
-let productosEnCarrito = localStorage.getItem("productos-en-carrito")
-productosEnCarrito = JSON.parse(productosEnCarrito)
+let carrito = localStorage.getItem("mi-carrito")
+carrito = JSON.parse(carrito)
 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio")
 const contenedorCarritoProductos = document.querySelector("#carrito-productos")
@@ -12,7 +12,7 @@ const botonComprar = document.querySelector("#carrito-acciones-comprar")
 
 
 function cargarProductosCarrito() {
-    if (productosEnCarrito && productosEnCarrito.length > 0) {
+    if (carrito && carrito.length > 0) {
 
         
         contenedorCarritoVacio.classList.add("disabled")
@@ -22,7 +22,7 @@ function cargarProductosCarrito() {
     
         contenedorCarritoProductos.innerHTML = ""
     
-        productosEnCarrito.forEach(producto => {
+        carrito.forEach(producto => {
     
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
@@ -94,12 +94,12 @@ function eliminarDelCarrito(e) {
       }).showToast()
 
     const idBoton = e.currentTarget.id;
-    const index = productosEnCarrito.findIndex(producto => producto.id === idBoton)
+    const index = carrito.findIndex(producto => producto.id === idBoton)
     
-    productosEnCarrito.splice(index, 1)
+    carrito.splice(index, 1)
     cargarProductosCarrito()
 
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
+    localStorage.setItem("mi-carrito", JSON.stringify(carrito))
 
 }
 
@@ -107,17 +107,17 @@ botonVaciar.addEventListener("click", vaciarCarrito)
 function vaciarCarrito() {
 
     Swal.fire({
-        title: '¿Estás seguro?',
+        title: '¿Desea vaciar el carrito?',
         icon: 'question',
-        html: `Se van a borrar ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
+        html: `Se van a borrar ${carrito.reduce((acc, producto) => acc + producto.cantidad, 0)} sabores.`,
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText: 'Sí',
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
-            productosEnCarrito.length = 0;
-            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
+            carrito.length = 0;
+            localStorage.setItem("mi-carrito", JSON.stringify(carrito))
             cargarProductosCarrito()
         }
       })
@@ -125,15 +125,15 @@ function vaciarCarrito() {
 
 
 function actualizarTotal() {
-    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0)
+    const totalCalculado = carrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0)
     total.innerText = `$${totalCalculado}`
 }
 
 botonComprar.addEventListener("click", comprarCarrito)
 function comprarCarrito() {
 
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
+    carrito.length = 0;
+    localStorage.setItem("mi-carrito", JSON.stringify(carrito))
     
     contenedorCarritoVacio.classList.add("disabled")
     contenedorCarritoProductos.classList.add("disabled")

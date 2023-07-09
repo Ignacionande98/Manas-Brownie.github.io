@@ -63,16 +63,10 @@ function actualizarBotones() {
     })
 }
 
-let productosEnCarrito
 
-let productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
+let carrito = localStorage.getItem("mi-carrito") ? JSON.parse(localStorage.getItem("mi-carrito")) : []
+if (localStorage.getItem("mi-carrito")) actualizarNumerito()
 
-if (productosEnCarritoLS) {
-    productosEnCarrito = JSON.parse(productosEnCarritoLS)
-    actualizarNumerito()
-} else {
-    productosEnCarrito = []
-}
 
 function agregarAlCarrito(e) {
 
@@ -80,9 +74,9 @@ function agregarAlCarrito(e) {
         text: "Sabor agregado al carrito",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "right", 
+        stopOnFocus: true, 
         style: {
           background: "black",
           borderRadius: "2rem",
@@ -90,30 +84,30 @@ function agregarAlCarrito(e) {
           fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem', 
+            y: '1.5rem' 
           },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
       }).showToast()
 
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton)
 
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
-        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton)
-        productosEnCarrito[index].cantidad++
+    if(carrito.some(producto => producto.id === idBoton)) {
+        const index = carrito.findIndex(producto => producto.id === idBoton)
+        carrito[index].cantidad++
     } else {
         productoAgregado.cantidad = 1
-        productosEnCarrito.push(productoAgregado)
+        carrito.push(productoAgregado)
     }
 
     actualizarNumerito()
 
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
+    localStorage.setItem("mi-carrito", JSON.stringify(carrito))
 }
 
 function actualizarNumerito() {
-    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)
+    let nuevoNumerito = carrito.reduce((acc, producto) => acc + producto.cantidad, 0)
     numerito.innerText = nuevoNumerito
 }
 
