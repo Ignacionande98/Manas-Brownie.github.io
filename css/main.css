@@ -14,6 +14,7 @@
 .producto {
     box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, 0.2);
     padding: 14px;
+    
 }
 
 .nav-link {
@@ -62,7 +63,7 @@ aside {
 .boton-menu {
     background-color: transparent;
     border: 0;
-    color: black;
+    color:#deb887;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -74,7 +75,7 @@ aside {
 }
 
 .boton-menu:hover {
-    color: #deb887;
+    color: white
 }
 
 
@@ -178,6 +179,8 @@ main {
     padding-right: 15px;
     border-radius: 15px;
     box-shadow: 5px 10px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #deb887;
+
 }
 
 
